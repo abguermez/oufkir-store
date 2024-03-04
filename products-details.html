@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Products - Redstore</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <!--<div class ="header">-->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
+            </div>
+           
+        </div>
+    <!--</div>-->
+    
+        
+        <!------------------------------ Single product details------------------------------>
+        <div class="small-container single-product">
+            
+            
+            <!--<h2 class="title" >Featured Products</h2>-->
+            <div class="row">
+                    <div class="col-2">
+                        <img src="images/6.jpg" width="100%" id="productImg">
+                        
+                        
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img src="images/1.jpg" width="100%" class="small-img">
+                            </div>
+                             <div class="small-img-col">
+                                <img src="images/2.jpg" width="100%" class="small-img">
+                            </div>
+                             <div class="small-img-col">
+                                <img src="images/3.jpeg" width="100%" class="small-img">
+                            </div>
+                             <div class="small-img-col">
+                                <img src="images/4.png" width="100%" class="small-img">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-2">
+                        <p>Home / </p>
+                        <h1>Trottinette électrique Bison Classic 800W                        </h1>
+                        <h4>150 MAD / jour</h4>
+                        <h3>description de produit</h3>
+                        <br>
+                        <p>Trottinette électrique Bison Classic 800W Batterie 13Ah combine puissance et vitesse. Avec son style unique et innovant, il est disponible en plusieurs couleur. idéal pour les circuit dans ville.                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <!----------------------------------Title------------------------------------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>produits en relation</h2>
+                <a href="products.html"><p>Afficher plus</p></a>
+            </div>
+        </div>
+                
+        <!----------------------------------products------------------------------------->
+        <div class="small-container">
+             <div class="row">
+                     <div class="col-4">
+                        <a href="products-details.html"><img src="images/4.png"></a>
+                        <a href="products-details.html"><h4>Trottinette électrique Segway NINEBOT Max G30LE</h4></a>
+                        <div class="rating">
+                            
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>160 MAD / jour</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/6.jpg"></a>
+                        <h4>Trottinette électrique Bison 48V Gris</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-half-o" ></i>
+                        </div>
+                        <p>160 MAD / jour</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/10.jpg"></a>
+                        <h4>SBA S5</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>160 MAD / jour</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/8.png"></a>
+                        <h4>Xiaomi Trottinette électrique Mi Scooter Essential</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star" ></i>
+                            <i class="fa fa-star-o" ></i>
+                            <i class="fa fa-star-o" ></i>
+                        </div>
+                        <p>160 MAD / jour</p>
+                    </div>  
+                </div>
+        </div>
+
+        <!----------------------------------footer------------------------------------->
+        <div class ="footer">
+            <p class="copyright">CEO: Ibrahim Oufqir - 2024</p>
+        </div>
+        
+        
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+        
+        <!-----------------------js for product gallery-------------------->
+        
+        <script>
+            var productImg=document.getElementById("productImg");
+            var smallImg=document.getElementsByClassName("small-img");
+            
+            smallImg[0].onclick=function(){
+                productImg.src=smallImg[0].src;
+            }
+             smallImg[1].onclick=function(){
+                productImg.src=smallImg[1].src;
+            }
+              smallImg[2].onclick=function(){
+                productImg.src=smallImg[2].src;
+            }
+               smallImg[3].onclick=function(){
+                productImg.src=smallImg[3].src;
+            }
+            
+            
+        </script>
+    </body>
+</html>
